@@ -24,15 +24,12 @@ export const Friend = styled.li`
 `;
 export const OnlineStatus = styled.span`
   display: block;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
-  background-color: red;
-  margin:0 10px;
-  ${props =>
-    props.isOnline &&
-    `
-    background-color: green;`}
+  margin: 0 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: ${props => (props.isOnline ? 'green' : 'red')};
 `;
 export const FriendImg = styled.img `
 margin-right: 10px;`

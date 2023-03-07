@@ -13,7 +13,7 @@ export default function FriendList({ friends }) {
       <Friend className="item" key={id}>
         <OnlineStatus
           className="status"
-          isOnline={isOnline ? true : false}
+          isOnline={isOnline}
         ></OnlineStatus>
         <FriendImg
           className="avatar"

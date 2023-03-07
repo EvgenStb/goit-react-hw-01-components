@@ -9,7 +9,7 @@ export const TitleStats = styled.h2 `
 margin:0;
 padding: 10px;
 border-bottom: 1px solid #676767;
-font-siz: 25px;
+font-size: 25px;
 text-align:center;
 color: #795A5A;
 `

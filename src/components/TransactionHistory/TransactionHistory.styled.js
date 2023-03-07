@@ -16,7 +16,11 @@ export const TableString = styled.tr`
   height: 40px;
   text-align: center;
   background-color: #f2f2f2;
+  cursor: pointer;
   &:nth-child(even) {
     background-color: #98c7ce;
+  }
+  &:hover {
+    background-color: rgba(66, 205, 218, .5);
   }
 `;

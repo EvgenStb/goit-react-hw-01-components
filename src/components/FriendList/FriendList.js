@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   FriendsList,
   Friend,
@@ -7,7 +7,7 @@ import {
 } from './FriendList.styled';
 
 
-export default function FriendList({ friends }) {
+export default function FriendList({friends}) {
   const handledList = friends.map(({ id, name, avatar, isOnline }) => {
     return (
       <Friend className="item" key={id}>
@@ -28,3 +28,11 @@ export default function FriendList({ friends }) {
   return <FriendsList className="friend-list">{handledList}</FriendsList>;
 }
 
+FriendsList.propTypes = {
+  friends: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+  }),
+};
